@@ -4,5 +4,5 @@ function solution(num_list) {
     num_list.forEach((v, i) => {
         i%2 ? odd+=v : even+=v;
     })
-    return odd > even ? odd : (odd < even ? even : even);
+    return odd > even ? odd : even;
 }
