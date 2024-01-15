@@ -1,5 +1,5 @@
 function solution(N, stages) {
-    let arr = Array.from({ length: N }, () => 0);
+    const arr = Array.from({ length: N }, () => 0);
     for (let idx=1; idx<=N; idx++) {
         for (let j=0; j<stages.length; j++) {
             if (stages[j] === idx || (stages[j] < idx && stages[j] >= idx) ) {
@@ -8,7 +8,7 @@ function solution(N, stages) {
         }
     }
 
-    let failRates = [];
+    const failRates = [];
     let leng = stages.length;
     arr.forEach((v, i) => {
         if (i === 0) {
